@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.tophead{
+    width: 100%;
+    height: 65px;
+    background: rgb(56, 139, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.brandlogo{
+    color: white;
+    font-size: 2.1rem;
+    padding-left: 20px;
+
+}
+.menulines{
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+    color: white;
+}
+/* ----------Navigation--------- */
+
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgb(3, 59, 77);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 30px 0 30px 30px;
+}
+.sidenav .membership{
+    color: rgba(255, 255, 255, 0.7) ;
+}
+.sidenav a:hover{
+    color: rgba(255, 255, 255, 0.7) ;
+}
+
+.closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px!important;
+
+}
+.m-top h1{
+    margin-top: 100px;
+}
+
+
+/* --Body-- */
+.backgraund{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+    
+    margin-top: 40px;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+form .gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid #d9d9d9;
+
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    background-color: #d9d9d9;
+    background: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+footer{
+    background-image:linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.9)), url(images/eyes-4751572_1920.png) ; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding:100px 100px 20px 100px;
+    margin-top: 50px;
+}
+.f-container{
+    font-size: 15px;
+    font-weight: 100!important;
+    height: 60vh;
+}
+footer .f-container h4{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.footer .para p{
+    font-weight: 100;
+}
+footer img{
+    width: 200px;
+    height: 200px;
+}
+.bottom{
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding-top: 3%;
+    background: rgb(200, 201, 199);
+}
+.btm{
+    display:flex;
+    text-align: center;
+}
+.badge-container{
+    display: flex;
+}
+.badge-container img:hover{
+    opacity: 0.5;
+}
+.btns{
+    display: flex;
+    padding-left: 500px;
+    align-content: center;
+    font-size: 30px;
+    
+}
+.f-btns a{
+    display: inline-flex;
+    text-decoration: none;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.f-btns a:hover{
+    background:darkslategray;
+}
+.btn-1{
+    color: white;
+    background: rgb(201, 171, 0);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-left: -280px;
+    margin-right: 100px;
+ 
+}
+.btn-2{
+    color: white;
+    background: rgb(173, 78, 0);
+    padding: 5px 30px 5px 30px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-right: 100px;
+ 
+ 
+   
+}
+.btn-3 img{
+    width: 200px;
+    height: 60px;
+    margin-right: 100px;
+}
+.btn-4 img{
+    width: 240px;
+    height: 90px;
+    margin-top: -13px;
+}
+.tag-container{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.tags a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.tags a:hover{
+    color: rgb(185, 68, 0);
+}
+.icon{
+    padding: 20px;
+}
+.icon a{
+    text-decoration: none;
+    color: rgb(97, 93, 93);
+    margin-right: 20px;
+}
+.icon a:hover{
+    color: rgb(3, 59, 77);
+}

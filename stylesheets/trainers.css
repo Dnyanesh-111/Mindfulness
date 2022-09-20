@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+/* 'Josefin sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.tophead{
+    width: 100%;
+    height: 65px;
+    background: rgb(56, 139, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+.brandlogo{
+    color: white;
+    font-size: 2.1rem;
+    padding-left: 20px;
+
+}
+.menulines{
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+    color: white;
+}
+
+/* ----------Navigation--------- */
+
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgb(3, 59, 77);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: all 0.5s;
+
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 30px 0 30px 30px;
+}
+.sidenav .trainers-1{
+    color: rgba(255, 255, 255, 0.7) ;
+}
+.sidenav a:hover{
+    color: rgba(255, 255, 255, 0.7) ;
+}
+
+.closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px!important;
+
+}
+
+/* ---Banner-1---- */
+.banner-1 h4{
+    position: absolute;
+    top:10%;
+    background: rgba(36, 36, 36, 0.795);
+    padding: 160px 400px 150px 400px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.banner-1 img{
+    margin-top: 65px;
+    width: 100%;
+    height: 450px;
+}
+.banner-2{
+    margin: 50px 100px 50px 100px;
+}
+.banner-2 h4{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(16, 7, 71);
+}
+.banner-2 .p-1{
+    font-size: 22px;
+}
+.banner-2 p{
+    font-size: 18px;
+}
+
+/* tariners */
+.trainers{
+    margin: 50px 100px 50px 150px;
+    height: 100%;
+}
+.trainers h4{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(75, 12, 1);
+}
+.t-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap:10px ;
+    row-gap: 40px;
+    
+}
+.t img,title{
+    display: block;
+    
+}
+.t img {
+    width: 300px;
+}
+.t .title{
+    color: rgb(218, 105, 0);
+    font-size: 20px;
+}
+
+
+/* Footer */
+
+footer{
+    background-image:linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.9)), url(images/eyes-4751572_1920.png) ; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding:100px 100px 20px 100px;
+    margin-top: 50px;
+}
+.f-container2{
+    
+    font-size: 15px;
+    font-weight: 100!important;
+    height: 60vh;
+}
+footer .f-container2 h4{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.footer .para p{
+    font-weight: 100;
+}
+footer img{
+    width: 200px;
+    height: 200px;
+}
+.bottom{
+    display: block;
+    width: 100%;
+    height: 300px;
+    padding-top: 3%;
+    background: rgb(200, 201, 199);
+}
+.btm{
+    display:flex;
+    text-align: center;
+}
+.badge-container{
+    display: flex;
+}
+.badge-container img:hover{
+    opacity: 0.5;
+}
+.btns{
+    display: flex;
+    padding-left: 500px;
+    align-content: center;
+    font-size: 30px;
+    
+}
+.f-btns a{
+    display: inline-flex;
+    text-decoration: none;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.f-btns a:hover{
+    background:darkslategray;
+}
+.btn-1{
+    color: white;
+    background: rgb(201, 171, 0);
+    padding: 5px 10px 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-left: -280px;
+    margin-right: 100px;
+ 
+}
+.btn-2{
+    color: white;
+    background: rgb(173, 78, 0);
+    padding: 5px 30px 5px 30px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-right: 100px;
+ 
+ 
+   
+}
+.btn-3 img{
+    width: 200px;
+    height: 60px;
+    margin-right: 100px;
+}
+.btn-4 img{
+    width: 240px;
+    height: 90px;
+    margin-top: -13px;
+}
+.tag-container{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.tags a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.tags a:hover{
+    color: rgb(185, 68, 0);
+}
+.icon{
+    padding: 20px;
+}
+.icon a{
+    text-decoration: none;
+    color: rgb(97, 93, 93);
+    margin-right: 20px;
+}
+.icon a:hover{
+    color: rgb(3, 59, 77);
+}
+
