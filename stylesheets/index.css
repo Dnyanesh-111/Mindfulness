@@ -124,7 +124,7 @@ nav .fas{
     .text-box{
         display: block;
         align-items: center;
-        margin-left: -15px;
+        margin: 0;
     }
     .text-box h1{
         font-size: 20px;
@@ -175,14 +175,14 @@ nav .fas{
     }
     .subc-img img{
         width: 300px;
-        margin: 20px 20px 10px 8px;
+        margin: 10px 0px 10px 25px;
         border: 5px solid white;
         
     }
     .body{
         background-color: papayawhip;
-        margin: 10px 40px 20px 8px;
-        padding: 30px 20px 30px 20px;
+        margin: 0;
+        padding: 10px 20px 10px 20px;
         line-height: 30px;
         align-self: center;
     }
@@ -236,13 +236,13 @@ nav .fas{
     .content2{
         display: block;
         height: 100%;
-        padding: 0px 10px 40px 6px;
+        padding: 0px 10px 40px 10px;
         text-align: left;
 
     }
     .cont2-img img{
+        margin: 10px 0px 10px 20px;
         width: 300px;
-        margin-left: 5px;
         border: 2px dashed rgb(182, 153, 153);
     }
     .cont2 h1{
@@ -254,8 +254,8 @@ nav .fas{
         margin-top: 0px;
     }
     .cont2 p{
+        margin: 0;
         font-size: 12px;
-        margin-right: 40px;
     } 
 }
 
@@ -327,9 +327,8 @@ nav .fas{
         margin-bottom: 40px;
     }
     .rev-body h1{
-        margin: 0;
+        margin: 15px 0px 0px 10px;
         padding: 0;
-        margin-top: 20px;
         font-size: 25px;
     }
     .rev-cont{
@@ -427,8 +426,11 @@ nav .fas{
     .f-note{
         display: block;
         margin: 0;
-        padding: 0;
+        padding: 10px 10px 10px 10px;
 
+    }
+    .f-note-cont p{
+        font-size: 10pxs;
     }
     .f-details h1{
         font-size: 25px;
@@ -460,8 +462,8 @@ nav .fas{
     background-color: rgb(135, 138, 1);
     height: 30vh;
     text-align: center; 
-    font-size: 30px;
-    padding: 100px 200px 0 200px;   
+    font-size: 15px;
+    padding-top: 100px; 
 }
 .q p{
     color: white;
@@ -469,7 +471,7 @@ nav .fas{
 .q h1{
     font-family:'Josefin Sans', sans-serif;;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -560,7 +562,19 @@ margin-left: 50px;
     background-color: rgb(247, 76, 9);
     transition: 0.3s;
 }
-
+@media(max-width: 700px){
+    .container h1{
+        font-size: 15px;
+    }
+    .box{
+        margin: 0;
+        padding: 0;
+    }
+    .buttons ul li{
+        margin: 10px;
+        margin-left: -6px;
+    }
+}
 
 /* Footer */
 
@@ -683,4 +697,57 @@ footer .f-container h4{
 }
 .icon a:hover{
     color: rgb(3, 59, 77);
+}
+@media(max-width: 700px){
+    .footer{
+        padding: 0;
+        margin: 0;
+    }
+    .f-container{
+        padding: 0;
+        margin: 0;
+    }
+    footer .f-container h4{
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    footer .para p{
+        margin: 0;
+        padding:0;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .btm{
+        display: block;
+        margin: 0;
+        padding: 0;
+      
+    }
+    .btns{
+        display: flex;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .btn-1{
+        margin: 10px 20px 20px 50px;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px!important;
+    }
+    .btn-2{
+        margin: 10px 20px 20px 10px;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px!important;
+    }
+    .btn-3 img{
+        margin: 0px 10px 10px 50px;
+        width: 120px;
+        height: 40px;
+    }
+    .btn-4 img{
+        margin: -9px 10px 10px 10px;
+        width: 120px;
+        height: 60px;
+    }
 }
