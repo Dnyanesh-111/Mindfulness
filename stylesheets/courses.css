@@ -74,6 +74,15 @@
     margin-top: 100px;
 }
 
+@media(max-width: 700px){
+  .tophead{
+   width: fit-content;
+  }
+  .brandlogo{
+    padding-right: 60px;
+  }
+}
+
 /*  Bannner-1  */
 
 .banner1{
@@ -100,6 +109,24 @@
     margin: 50px 100px 0px 100px;
     font-size: 20px;
 }
+
+@media(max-width: 700px){
+    .banner1{
+        padding:25px 10px 25px 10px;
+        margin: 0;
+        height: 200px;
+    }
+    .banner1 h1{
+        padding: 0;
+        margin:50px 0px 0px 0px;
+        font-size: 15px;
+    }
+    .banner1 p{
+        font-size: 10px;
+    }
+}
+
+  /* BANNER2 */
 .banner2{
     display: flex;
     margin: 50px 100px 50px 100px;
